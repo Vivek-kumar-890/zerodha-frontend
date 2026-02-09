@@ -11,6 +11,11 @@ import AboutPage from "./landing_page/about/AboutPage";
 import ProductPage from "./landing_page/products/ProductPage";
 import PricingPage from "./landing_page/pricing/PricingPage";
 import SupportPage from "./landing_page/support/SupportPage";
+import AccountOpening from "./landing_page/support/AccountOpening";
+import SegmentActivation from "./landing_page/support/SegmentActivation";
+import IntradayMargins from "./landing_page/support/IntradayMargins";
+import KiteManual from "./landing_page/support/KiteManual";
+
 
 import NotFound from "./landing_page/NotFound";
 import Navbar from "./landing_page/Navbar";
@@ -28,6 +33,10 @@ root.render(
       <Route path="/product" element={<ProductPage />} />
       <Route path="/pricing" element={<PricingPage />} />
       <Route path="/support" element={<SupportPage />} />
+      <Route path="/support/AccountOpening" element={<AccountOpening />} />
+      <Route path="/support/SegmentActivation" element={<SegmentActivation />} />
+      <Route path="/support/IntradayMargins" element={<IntradayMargins />} />
+      <Route path="/support/kiteManual" element={<KiteManual />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
