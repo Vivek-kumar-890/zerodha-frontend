@@ -34,7 +34,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:4000",
+        ("https://zerodha-backend-1-gxjf.onrender.com"),
         {},
         { withCredentials: true }
       );
