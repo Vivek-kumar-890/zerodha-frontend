@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from "react";
+import {Link} from "react-router-dom";
 
 function Footer() {
   return (
@@ -6,68 +9,41 @@ function Footer() {
       <div className="container border-top mt-5">
         <div className="row mt-5">
           <div className="col">
-            <img src="media/images/logo.svg" style={{ width: "50%" }} />
+            <img src="media/images/logo.svg" alt="logo" style={{ width: "50%" }} />
             <p>
               &copy; 2010 - 2025, Not Zerodha Broking Ltd. All rights reserved.
             </p>
           </div>
+
           <div className="col">
-            <p style={{fontWeight:"bold"}}>Company</p>
-            <a href="">About</a>
-            <br />
-            <br />
-            <a href="">Products</a>
-            <br />
-            <br />
-            <a href="">Pricing</a>
-            <br />
-            <br />
-            <a href="">Referral programme</a>
-            <br />
-            <br />
-            <a href="">Careers</a>
-            <br />
-            <br />
-            <a href="">Zerodha.tech</a>
-            <br />
-            <br />
-            <a href="">Press & media</a>
-            <br />
-            <br />
-            <a href="">Zerodha cares (CSR)</a>
-            <br />
-            <br />
+            <p style={{ fontWeight: "bold" }}>Company</p>
+            <Link to="/about">About</Link><br /><br />
+            <Link to="/products">Products</Link><br /><br />
+            <Link to="/pricing">Pricing</Link><br /><br />
+            <Link to="/referral">Referral programme</Link><br /><br />
+            <Link to="/careers">Careers</Link><br /><br />
+            <Link to="/tech">Zerodha.tech</Link><br /><br />
+            <Link to="/press">Press & media</Link><br /><br />
+            <Link to="/csr">Zerodha cares (CSR)</Link><br /><br />
           </div>
-          <div className="col second">
-            <p style={{fontWeight:"bold"}}>Support</p>
-            <a href="">Contact</a>
-            <br />
-            <br />
-            <a href="">Support portal</a>
-            <br />
-            <br />
-            <a href="">Z-Connect blog</a>
-            <br />
-            <br />
-            <a href="">List of charges</a>
-            <br />
-            <br />
-            <a href="">Downloads & resources</a>
-            <br />
-            <br />
+
+         <div className="col second">
+            <p style={{ fontWeight: "bold" }}>Support</p>
+            <Link to="/contact">Contact</Link><br /><br />
+            <Link to="/support">Support portal</Link><br /><br />
+            <Link to="/blog">Z-Connect blog</Link><br /><br />
+            <Link to="/charges">List of charges</Link><br /><br />
+            <Link to="/downloads">Downloads & resources</Link><br /><br />
           </div>
+          
           <div className="col third">
-            <p style={{fontWeight:"bold"}}>Account</p>
-            <a href="">Open an account</a>
-            <br />
-            <br />
-            <a href="">Fund transfer</a>
-            <br />
-            <br />
-            <a href="">60 day challenge</a>
-            <br />
+            <p style={{ fontWeight: "bold" }}>Account</p>
+            <Link to="/signup">Open an account</Link><br /><br />
+            <Link to="/fund-transfer">Fund transfer</Link><br /><br />
+            <Link to="/challenge">60 day challenge</Link><br />
           </div>
         </div>
+
         <div className="mt-5 text-muted" style={{ fontSize: "14px" }}>
           <p>
             Zerodha Broking Ltd.: Member of NSE​ &​ BSE – SEBI Registration no.:
@@ -116,21 +92,38 @@ function Footer() {
         </div>
       </div>
       <div className="mt-5" style={{marginLeft:"150px"}}>
-        <a href="#" style={{color:"white"}}>NSE</a>
-        &nbsp; &nbsp;&nbsp;
-        <a href="#">BSE</a>
-        &nbsp; &nbsp;&nbsp;
-        <a href="#">Term & Condition</a>
-        &nbsp; &nbsp;&nbsp;
-        <a href="#">Policies & procedures</a>
-        &nbsp; &nbsp;&nbsp;
-        <a href="#">Privacy policy</a>
-        &nbsp; &nbsp;&nbsp;
-        <a href="#">Disclosure</a>
-        &nbsp; &nbsp;
-        <a href="#">For investor's attention </a>
-        &nbsp; &nbsp;&nbsp;
-        <a href="#">Investor charter</a>
+         <a
+          href="https://www.nseindia.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          NSE
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a
+          href="https://www.bseindia.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          BSE
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <Link to="/terms">Terms & Condition</Link>
+        &nbsp;&nbsp;&nbsp;
+
+        <Link to="/policies">Policies & procedures</Link>
+        &nbsp;&nbsp;&nbsp;
+
+        <Link to="/privacy">Privacy policy</Link>
+        &nbsp;&nbsp;&nbsp;
+
+        <Link to="/disclosure">Disclosure</Link>
+        &nbsp;&nbsp;&nbsp;
+
+        <Link to="/investor-attention">For investor's attention</Link>
+        &nbsp;&nbsp;&nbsp;
+
+        <Link to="/investor-charter">Investor charter</Link>
       </div>
     </footer>
   );

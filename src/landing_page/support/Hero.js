@@ -18,13 +18,13 @@ function Hero() {
           <input placeholder="Eg. how do I activate F&O" />
           <br />
 
-          <Link to="/support/account-opening">Track account opening</Link>
+          <Link to="/support/AccountOpening">Track account opening</Link>
           <br />
-          <Link to="/support/segment-activation">Track segment activation</Link>
+          <Link to="/support/SegmentActivation">Track segment activation</Link>
           <br />
-          <Link to="/support/intraday-margins">Intraday margins</Link>
+          <Link to="/support/IntradayMargins">Intraday margins</Link>
           <br />
-          <Link to="/support/kite-manual">Kite user manual</Link>
+          <Link to="/support/KitManual">Kite user manual</Link>
         </div>
 
         <div className="col-6 p-3">

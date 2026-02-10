@@ -36,7 +36,7 @@ root.render(
       <Route path="/support/AccountOpening" element={<AccountOpening />} />
       <Route path="/support/SegmentActivation" element={<SegmentActivation />} />
       <Route path="/support/IntradayMargins" element={<IntradayMargins />} />
-      <Route path="/support/kiteManual" element={<KiteManual />} />
+      <Route path="/support/kitManual" element={<KiteManual />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
